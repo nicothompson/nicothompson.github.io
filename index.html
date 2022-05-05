@@ -326,7 +326,7 @@
 							</li>
 
                             
-							<li class="print grid-item">
+							<li class="print grid-item" data-toggle="modal" data-target="#exampleModal">
 								<div class="inner">
 									<div class="entry dizme_tm_portfolio_animation_wrap" data-title="Print Design for Award Shows" data-category="Design and Management of Print Materials">
 										<a class="portfolio_popup" href="#">
@@ -340,7 +340,7 @@
 										<span>Design and Management of Print Materials</span>
 									</div>
 
-									<div class="hidden_content">
+									<div class="hidden_content" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 										<div class="popup_details">
 											<div class="main_details">
                                             <p class="popup_text">Full ownership and creation of all multimedia design and print production, across 4 hospitality award shows.</p>
@@ -1008,42 +1008,28 @@
 <script type="text/javascript" src="https://unpkg.com/popper.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 		
-		
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
 <!-- /SCRIPTS -->
 	
-
 <script>
-const params = new Proxy(new URLSearchParams(window.location.search), {
-  get: (searchParams, prop) => searchParams.get(prop),
+function lazyload(){
+   var wt = $(window).scrollTop();    //* top of the window
+   var wb = wt + $(window).height();  //* bottom of the window
+
+   $(".portfolio_list").each(function(){
+      var ot = $(this).offset().top;  //* top of object (i.e. advertising div)
+      var ob = ot + $(this).height(); //* bottom of object
+
+   });
+}
+$(document).ready(function(){
+   $(window).scroll(lazyload);
+   lazyload();
 });
-// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-let value = params.tab; // "some_value"
-
-if (params.tab === 'singles') {
-	alert("singles");
-}
-else if (params.tab === 'corner') {
-	alert("corner");
-}
-else if (params.tab === 'light') {
-	alert("light");
-}
-else if (params.tab === 'rice') {
-	alert("rice");
-}
-else if (params.tab === 'bliss') {
-	alert("bliss");
-}
-else if (params.tab === 'other') {
-	alert("other");
-}
-else{
-  //Backgeound Grey
-}
-</script>
-
+</script>    
+    
+    
 </body>
 </html>
