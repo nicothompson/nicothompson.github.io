@@ -43,6 +43,26 @@ jQuery(document).ready(function(){
 // ---------------   FUNCTIONS    ----------------------
 // -----------------------------------------------------
 
+
+// -----------------------------------------------------
+// ---------------   CUSTOM NT JS    ----------------------
+// -----------------------------------------------------
+
+function enableAutoplay() {
+    var elements = document.querySelectorAll("video");
+    for (var i = 0, len = elements.length; i < len; i++) {
+    elements[i].setAttribute("autoplay", "true");
+    elements[i].setAttribute("preload", "auto");
+    }
+}
+ 
+function disablePreload() {
+    var elements = document.querySelectorAll("video");
+    for (var i = 0, len = elements.length; i < len; i++) {
+    elements[i].setAttribute("preload", "auto");
+    }
+}
+
 // -----------------------------------------------------
 // --------------------   MODALBOX    ------------------
 // -----------------------------------------------------
@@ -187,6 +207,7 @@ function dizme_tm_modalbox_portfolio(){
 	var closePopup		= modalBox.find('.close');
 
 	button.off().on('click',function(){
+enableAutoplay(); // Custom JS on portfolio load
 		var element 	= jQuery(this);
 		var parent 		= element.closest('.inner');
 		var content	 	= parent.find('.hidden_content').html();
@@ -194,7 +215,7 @@ function dizme_tm_modalbox_portfolio(){
 		var category 	= parent.find('.entry').data('category');
 		var title	 	= parent.find('.entry').data('title');
 		modalBox.addClass('opened');
-		modalBox.find('.description_wrap').html(content);
+        modalBox.find('.description_wrap').html(content);
 		modalBox.find('.popup_details').prepend('<div class="top_image"></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a href="#">'+category+'</a></span><div>');
 		dizme_tm_data_images();
