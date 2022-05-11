@@ -2715,11 +2715,11 @@ input[type=number] {
 	.dizme_tm_modalbox .description_wrap{padding: 40px;}
 	.dizme_tm_modalbox .description_wrap:before{height: 40px;}
 	.dizme_tm_modalbox .description_wrap:after{height: 40px;}
-	.dizme_tm_modalbox .box_inner{top: 50px;bottom: 50px;width: 800px;}
+	.dizme_tm_modalbox .box_inner{top: 50px;bottom: 50px;width: 70%;}
 	.dizme_tm_modalbox .close{margin-left: 20px;}
 }
 @media (max-width: 1200px) {
-	.dizme_tm_modalbox .box_inner{width: 500px;}
+	.dizme_tm_modalbox .box_inner{width: 85%;}
 	.dizme_tm_modalbox .description_wrap{padding: 35px;}
 	.dizme_tm_modalbox .description_wrap:before{height: 35px;}
 	.dizme_tm_modalbox .description_wrap:after{height: 35px;}
@@ -2828,7 +2828,7 @@ input[type=number] {
 	.dizme_tm_contact .input_list ul{margin: 0px;}
 	.dizme_tm_contact .input_list ul li{width: 100%;padding-left: 0px;}
 	.dizme_tm_subscribe .field input[type="submit"]{padding: 0px 15px;}
-	.dizme_tm_modalbox .box_inner{width: 300px;}
+	.dizme_tm_modalbox .box_inner{width: 80%;}
 	.dizme_tm_modalbox .portfolio_main_title h3{font-size: 19px;margin-bottom: 2px;}
 	.dizme_tm_modalbox .description_wrap{padding: 20px;}
 	.dizme_tm_modalbox .description_wrap:before{height: 20px;}
