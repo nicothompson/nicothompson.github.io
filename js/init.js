@@ -55,7 +55,9 @@ function enableAutoplay() {
     elements[i].setAttribute("preload", "auto");
     }
 }
- 
+
+setTimeout("enableAutoplay()", 5000);
+
 function disablePreload() {
     var elements = document.querySelectorAll("video");
     for (var i = 0, len = elements.length; i < len; i++) {
