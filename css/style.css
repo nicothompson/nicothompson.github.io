@@ -3053,6 +3053,9 @@ border-top: 1px #6f6b80 solid;
 .illustrator .st0 {
 fill: #ff9a00 !important;
 }
+.img-size {
+background: #fff;
+}
 .carousel-item {
 background: url("img/loading.gif") no-repeat;
 background-size: 30%;
