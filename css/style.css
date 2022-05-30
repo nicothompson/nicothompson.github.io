@@ -3058,3 +3058,8 @@ background: url("img/loading.gif") no-repeat;
 background-size: 30%;
 background-position: center;
 }
+@media (max-width: 700px) {
+.carousel-item {
+background-size: 100%;
+}
+}
