@@ -3054,7 +3054,7 @@ border-top: 1px #6f6b80 solid;
 fill: #ff9a00 !important;
 }
 .carousel-item {
-background: url("img/loading.gif") no-repeat;
+background: url("/img/loading.gif") no-repeat;
 background-size: 30%;
 background-position: center;
 }
