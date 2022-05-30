@@ -3055,7 +3055,7 @@ fill: #ff9a00 !important;
 }
 .carousel-item {
 background: url("/img/loading.gif") no-repeat;
-background-size: 30%;
+background-size: 40%;
 background-position: center;
 }
 @media (max-width: 700px) {
