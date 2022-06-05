@@ -3063,3 +3063,32 @@ background-position: center;
 background-size: 100%;
 }
 }
+
+.music-tooltip {
+  position:relative;
+  border-bottom:1px dashed #000;
+}
+
+.music-tooltip:before {
+  content: attr(data-text);
+  position:absolute;
+  
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+
+  /* move to right */
+  margin-top: -25px; /* and add a small left margin */
+  /* basic styles */
+font-size: 16px;
+  width:250px;
+  padding:10px;
+  border-radius:10px;
+  background:#000;
+  color: #fff;
+  text-align:center;
+  display:none; /* hide by default */
+}
+.music-tooltip:hover:before {
+  display:block;
+}
