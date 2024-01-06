@@ -43,30 +43,6 @@ jQuery(document).ready(function(){
 // ---------------   FUNCTIONS    ----------------------
 // -----------------------------------------------------
 
-
-// -----------------------------------------------------
-// ---------------   CUSTOM NT JS    ----------------------
-// -----------------------------------------------------
-
-function enableAutoplay() {
-    var elements = document.querySelectorAll("video");
-    for (var i = 0, len = elements.length; i < len; i++) {
-    elements[i].setAttribute("autoplay", "true");
-    elements[i].setAttribute("preload", "auto");
-    }
-}
-
-setTimeout("enableAutoplay()", 5000);
-
-function disablePreload() {
-    var elements = document.querySelectorAll("video");
-    for (var i = 0, len = elements.length; i < len; i++) {
-    elements[i].setAttribute("preload", "auto");
-    }
-}
-
-setTimeout("disablePreload()", 5000);
-
 // -----------------------------------------------------
 // --------------------   MODALBOX    ------------------
 // -----------------------------------------------------
