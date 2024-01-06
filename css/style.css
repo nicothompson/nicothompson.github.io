@@ -3002,36 +3002,37 @@ display: none;
 .carousel-control-prev, .carousel-control-next {
 background: rgba(0,0,0,0.25);
 margin:auto;
-width: 40px;
 padding: 10px;
 opacity: 1;
+width: 50px;
+height: 50px;
+border-radius: 40px;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
 background: rgba(0,0,0,1);
-
+}
+.carousel-control-prev {
+left: 10px;
+}
+.carousel-control-next {
+right: 10px;    
 }
 .carousel-caption {
+position: unset;
 bottom: 0px;
 right: unset;
 left: unset;
-background: rgba(0,0,0,1);
 width: 100%;
 }
 .carousel-caption *{
-color: #fff;
+color: #6f6b80;
 }
 .carousel-caption p{
 padding: 0px 40px;
 }
 .carousel-indicators {
 display: none;
-}
-.carousel-item .img-size {
-padding-bottom: 70px;
-}
-.carousel-item video {
-padding-bottom: 60px;
 }
 .carousel {
 width: 100%;
@@ -3097,4 +3098,107 @@ font-size: 16px;
 }
 .grid-item {
 filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
+}
+.dizme_tm_header_portfolio {
+    position: unset;
+    border-bottom: 1px solid rgba(111, 107, 128, 0.5);
+}
+.dizme_tm_hero_portfolio {
+    border-bottom: unset;
+    height: unset;
+    text-align: center;
+    margin-bottom: unset;
+    background: #FFD05E;
+    padding: 30px 0px;
+}
+.dizme_tm_mobile_menu_portfolio {
+    position: unset;
+}
+.dizme_tm_hero_portfolio .content {
+    justify-content: center;
+}
+.anchor_nav  {
+position: relative;
+}
+.dropdown_nav li {
+margin: unset !important;
+padding: 20px;
+}
+.anchor_nav li{
+padding: 10px 0px;
+}
+.dropdown_nav {
+z-index: -1;
+background: #fff;
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 55px;
+left: 100px;
+border-radius: 5px;
+padding: 10px 40px;
+opacity: 0;
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+font-size: 16px;
+}
+.portfolio_link:hover .dropdown_nav {
+opacity: 100;
+z-index: 1;
+}
+.dropdown_nav a {
+color: #000 !important;
+}
+.dropdown_nav a:hover {
+color: #2F5FD9 !important;
+}
+.dizme_about_port {
+text-align: center;
+padding: 40px 0px;
+max-width: 1000px;
+margin: auto;
+}
+.dizme_button_nav {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 40px;
+gap: 20px;
+}
+.dizme_button_nav .dizme_tm_button {
+width: unset;
+float: unset;
+}
+.dizme_anchor_title {
+margin-bottom: 20px;
+text-align: center;
+}
+.carousel {
+border: 2px solid #FFD05E;
+border-radius: 5px;
+overflow: hidden;
+} 
+#asda {
+margin-top: 40px;
+}
+.dizme_tm_header .menu ul li.current .active {
+color: #2F5FD9 !important;
+}
+@media (max-width: 1600px) {
+    .dropdown_nav {
+    left: 55px;
+    }
+}
+@media (max-width: 1040px) {
+    .dropdown_nav {
+    position: relative;
+    opacity: 100%;
+    z-index: 0;
+    width: 100%;
+    top: unset;
+    box-shadow: none;
+    padding: 5px 20px;
+    }
+    .anchor_nav li {
+    padding: 6px 0px;
+    }
 }
