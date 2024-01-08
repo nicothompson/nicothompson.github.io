@@ -567,9 +567,9 @@ function dizme_tm_owl_carousel(){
 	carousel.owlCarousel({
 		loop: true,
 		items: 1,
-		lazyLoad: false,
+		lazyLoad: true,
 		margin: 0,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 7000,
 		rtl: rtlMode,
 		dots: true,
