@@ -567,7 +567,7 @@ function dizme_tm_owl_carousel(){
 	carousel.owlCarousel({
 		loop: true,
 		items: 1,
-		lazyLoad: true,
+		lazyLoad: false,
 		margin: 0,
 		autoplay: false,
 		autoplayTimeout: 7000,
@@ -682,3 +682,18 @@ $('.portfolio_list').waitForImages().done(function() {
 		itemSelector: '.grid-item',
 	});
 });
+
+// -------------------------------------------------
+// -----------------    CUSTOM JS   ---------------
+// -------------------------------------------------
+
+function stop_all_videos (){
+    $("iframe").each(function() { 
+            var src= $(this).attr('src');
+            $(this).attr('src',src);  
+    });
+}
+
+document.getElementsByClassName("carousel-control-prev").onclick = stop_all_videos();
+
+document.getElementsByClassName("carousel-control-next").onclick = stop_all_videos();
