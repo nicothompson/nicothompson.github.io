@@ -3237,13 +3237,21 @@ filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
     left: 15px;
     }
 }
-
 .avatar .image img {
-border-radius: 400px;
-border: solid #fff 20px;
+	border-radius: 400px;
+	border: solid #fff 20px;
 }
 @media (max-width: 600px) {
-.avatar .image img {
-border: solid #fff 10px;
-}
+	.avatar .image img {
+	border: solid #fff 10px;
+	}
+	.dizme_about_port .wrapper {
+	flex-direction: column;
+	}
+	.dizme_tm_section .wrapper {
+	flex-direction: column;
+	}
+	.dizme_button_nav {
+	flex-direction: column;
+	}
 }
