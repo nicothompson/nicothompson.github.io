@@ -3263,3 +3263,6 @@ body::after{
    content:url(https://nicothompson.github.io/img/portfolio/digital/find-the-jewel-thumb-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/digital-thumb-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/Stars-thumb-s.png) url(https://nicothompson.github.io/img/portfolio/digital/siente-i-know-better-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/bh-thumb-3-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/awards_thumb-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/pie-shop-s.jpg) url(https://nicothompson.github.io/img/portfolio/digital/ms-thumb-s.jpg);   // load images
 }
 
+.dizme_tm_portfolio .portfolio_list .inner img {
+opacity: 1;
+}
