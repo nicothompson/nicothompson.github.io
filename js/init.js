@@ -213,7 +213,7 @@ enableAutoplay(); // Custom JS on portfolio load
 // -------------------------------------------------
 
 // filterable
-
+/*
 function dizme_tm_portfolio(){
 
 	"use strict";
@@ -268,7 +268,7 @@ function dizme_tm_projects(){
 		});
 	});
 }
-
+*/
 // -------------------------------------------------
 // -------------  PROGRESS BAR  --------------------
 // -------------------------------------------------
