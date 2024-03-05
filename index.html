@@ -498,6 +498,17 @@
     <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
+
+    <script>
+        setTimeout(function(){
+        $('.portfolio_list').waitForImages().done(function() {
+            // All descendant images have loaded, now slide up.
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+            });
+        });
+        }, 3000);
+    </script>
     <!-- /SCRIPTS -->
 
 </body>
