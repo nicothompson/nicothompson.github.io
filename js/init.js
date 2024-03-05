@@ -685,6 +685,15 @@ window.addEventListener("load", (event) => {
     });
 });
 
+setTimeout(function(){
+$('.portfolio_list').waitForImages().done(function() {
+    // All descendant images have loaded, now slide up.
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+    });
+});
+}, 3000);
+
 // -------------------------------------------------
 // -----------------    CUSTOM JS   ---------------
 // -------------------------------------------------
