@@ -675,11 +675,14 @@ function dizme_tm_down(){
 // ------------    WAIT FOR IMAGES   -------------------
 // -----------------------------------------------------
 
-$('.portfolio_list').waitForImages().done(function() {
+
+window.addEventListener("load", (event) => {
+  $('.portfolio_list').waitForImages().done(function() {
     // All descendant images have loaded, now slide up.
     $('.grid').masonry({
-		itemSelector: '.grid-item',
-	});
+        itemSelector: '.grid-item',
+    });
+    });
 });
 
 // -------------------------------------------------
