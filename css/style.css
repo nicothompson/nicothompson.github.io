@@ -3416,3 +3416,88 @@ padding: 0px 20px
 
 
 
+
+
+    .card {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .portfolio-section {
+        max-width: 1170px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    /* FLEXBOX Approach --- */
+    .portfolio-flex {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio-flex .card {
+        width: 100%;
+        max-width: calc(100% / 3 - 1rem);
+        background-color: #e7e7e7;
+        height: 19rem;
+        justify-content: flex-end;
+    }
+
+    .portfolio-flex .card-text {
+        padding: 0.75rem;
+        background: #2F5FD9;
+        color: #fff;
+    }
+    .card-img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .print .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-sheffield.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .awards .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-festive.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .video .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-ready.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .website .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-swimteam.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .logo .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-jewel.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .asda-web .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-festive.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .ux .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/thumbnail/thumb-n-guidelines.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .digital .card-img {
+    background: url(https://nicothompson.github.io/img/portfolio/digital/digital-thumb-s.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    @media (max-width: 900px) {
+        .portfolio-flex .card {
+            max-width: calc(100% / 2 - 1rem) !important;
+        }
+    }
