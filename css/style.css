@@ -3522,3 +3522,7 @@ margin-top: -20px;
 @media (max-width: 1600px) {
 	.dizme_tm_hero .job p{font-size: 25.5px;}
 }
+
+.dizme_tm_about_port {
+text-align: left !important;
+}
