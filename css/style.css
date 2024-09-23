@@ -3526,3 +3526,77 @@ margin-top: -20px;
 .dizme_tm_about_port {
 text-align: left !important;
 }
+
+
+/* Digital Banners Page */
+
+.digital-image-container-1,
+.digital-image-container-2,
+.digital-image-container-3,
+.digital-image-container-4 {
+display: flex;
+flex-wrap: wrap;
+gap: 2%;
+justify-content: space-between;
+align-items: space-between;
+}
+.digital-image-container-1 div {
+margin-bottom: 2%;
+}
+.digital-image-container-1 div:nth-child(1) {
+width: 62%;
+}
+.digital-image-container-1 div:nth-child(2) {
+width: 36%;
+}
+.digital-image-container-1 div:nth-child(3) {
+width: 26%;
+}
+.digital-image-container-1 div:nth-child(4) {
+width: 35%;
+}
+.digital-image-container-1 div:nth-child(5) {
+width: 35%;
+}
+.digital-image-container-1 div:nth-child(6) {
+width: 42%;
+}
+.digital-image-container-1 div:nth-child(7) {
+width: 56%;
+}
+
+
+.digital-image-container-2 div:nth-child(1) {
+width: 45%;
+}
+.digital-image-container-2 div:nth-child(2) {
+width: 50%;
+}
+
+
+
+.digital-image-container-3 div:nth-child(1) {
+width: 53%;
+}
+.digital-image-container-3 div:nth-child(2) {
+width: 45%;
+}
+
+
+.digital-image-container-4 div:nth-child(1) {
+width: 60%;
+}
+.digital-image-container-4 div:nth-child(2) {
+display: flex;
+width: 37%;
+flex-wrap: wrap;
+gap: 2%;
+justify-content: space-between;
+align-items: space-between;
+}
+.digital-image-container-4 div:nth-child(2) div {
+width: 100%;
+}
+.digital-image-container-4 div:nth-child(2) div:nth-child(2) {
+border: 2px solid #000;
+}
