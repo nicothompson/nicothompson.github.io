@@ -517,9 +517,9 @@ h6 { font-size: 16px; }
 	margin-bottom: 35px;
 }
 .dizme_tm_hero .job p{
-	font-size: 28px;
+	font-size: 32px;
 	color: #000;
-	font-weight: 600;
+	font-weight: 700;
 }
 .dizme_tm_hero .text{
 	margin-bottom: 42px;
@@ -3515,3 +3515,10 @@ padding: 0px 20px
             height: 60vw;
         }
     }
+
+.dizme_tm_hero .job p {
+margin-top: -20px;
+}
+@media (max-width: 1600px) {
+	.dizme_tm_hero .job p{font-size: 25.5px;}
+}
