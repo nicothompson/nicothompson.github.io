@@ -3601,3 +3601,10 @@ width: 100%;
 .digital-image-container-4 div:nth-child(2) div:nth-child(2) {
 border: 2px solid #000;
 }
+
+.video-portfolio {
+border: 2px solid #FFD05E;
+}
+.carousel .video-portfolio {
+border: none;
+}
