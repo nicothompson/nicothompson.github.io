@@ -3447,6 +3447,7 @@ padding: 0px 20px
     }
 
     .portfolio-flex .card-text {
+	font-weight: 700;
         padding: 0.75rem;
         background: #2F5FD9;
         color: #fff;
