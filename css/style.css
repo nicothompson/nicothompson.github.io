@@ -3608,3 +3608,23 @@ border: 2px solid #FFD05E;
 .carousel .video-portfolio {
 border: none;
 }
+
+.dizme_tm_section#feedback {
+background: #2F5FD9;
+padding: 20px;
+color: #fff;
+}
+.dizme_tm_section#feedback h2{
+color: #fff;
+}
+.dizme_tm_feedback {
+max-width: 800px;
+margin: auto;
+text-align: center;
+}
+.dizme_tm_feedback *{
+padding: 10px;
+}
+.dizme_tm_feedback img{
+max-width: 200px;
+}
