@@ -3446,12 +3446,17 @@ padding: 0px 20px
         justify-content: flex-end;
     }
 
-    .portfolio-flex .card-text {
+	.card-text-container {
 	font-weight: 700;
-        padding: 0.75rem;
-        background: #2F5FD9;
-        color: #fff;
-    }
+	padding: 0.75rem;
+	background: #2F5FD9;
+	color: #fff;
+	}
+	.card-text-container .card-text-2 {
+	font-weight: 500;
+	font-size: 16px;
+	}
+
     .card-img {
         display: flex;
         width: 100%;
