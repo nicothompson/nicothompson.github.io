@@ -3440,7 +3440,7 @@ padding: 0px 20px
 
     .portfolio-flex .card {
         width: 100%;
-        max-width: calc(100% / 3 - 1rem);
+        max-width: calc(100% / 3.4 - 1rem);
         background-color: #e7e7e7;
         height: 18rem;
         justify-content: flex-end;
