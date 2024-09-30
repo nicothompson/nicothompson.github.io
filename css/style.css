@@ -2811,12 +2811,12 @@ input[type=number] {
 	.dizme_tm_copyright .inner{flex-direction: column;align-items: center;}
 }
 @media (max-width: 768px) {
-	.dizme_tm_hero .avatar img{max-width: 330px;max-height: 330px;}
+	.dizme_tm_hero .avatar img{max-width: 280px;max-height: 280px;}
 	.dizme_tm_hero .job{margin-bottom: 15px;}
 	.dizme_tm_hero .job p{font-size: 14pt;}
 	.dizme_tm_hero .hello h3{font-size: 21px;}
 	.dizme_tm_hero .text p{font-size: 16px;}
-	.dizme_tm_hero .name h3{font-size: 42px;}
+	.dizme_tm_hero .name h3{font-size: 42px; line-height: 1.7; }
 	.dizme_tm_hero .social{padding-left: 15px; top: 40px; font-size: 22px; }
 	.dizme_tm_portfolio .portfolio_list ul{margin: 0px;}
 	.dizme_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
@@ -3252,11 +3252,11 @@ filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
 }
 .avatar .image img {
 	border-radius: 400px;
-	border: solid #fff 20px;
+	border: solid #fff 15px;
 }
 @media (max-width: 600px) {
 	.avatar .image img {
-	border: solid #fff 10px;
+	border: solid #fff 20px;
 	}
 	.dizme_about_port .wrapper {
 	flex-direction: column;
