@@ -3518,6 +3518,9 @@ padding: 0px 20px
 	background-size: 105%;
     }
     @media (max-width: 1200px) {
+	.portfolio-flex {
+	    gap: 2rem;
+	}
         .portfolio-flex .card {
             max-width: calc(100% / 2 - 1rem) !important;
         }
