@@ -3453,6 +3453,21 @@ padding: 0px 20px
         justify-content: flex-end;
     }
 
+    @media (max-width: 1200px) {
+	.portfolio-flex {
+	    gap: 2rem;
+	}
+        .portfolio-flex .card {
+            max-width: calc(100% / 2 - 1rem) !important;
+        }
+    }
+    @media (max-width: 750px) {
+        .portfolio-flex .card {
+            max-width: calc(100% / 1 - 1rem) !important;
+            height: 60vw;
+        }
+    }
+
 	.card-text-container {
 	font-weight: 700;
 	padding: 0.75rem;
@@ -3517,20 +3532,7 @@ padding: 0px 20px
     .card:hover .card-img {
 	background-size: 105%;
     }
-    @media (max-width: 1200px) {
-	.portfolio-flex {
-	    gap: 2rem;
-	}
-        .portfolio-flex .card {
-            max-width: calc(100% / 2 - 1rem) !important;
-        }
-    }
-    @media (max-width: 750px) {
-        .portfolio-flex .card {
-            max-width: calc(100% / 1 - 1rem) !important;
-            height: 60vw;
-        }
-    }
+
 
 .dizme_tm_hero .job p {
 margin-top: -20px;
